@@ -45,7 +45,7 @@ client.on("messageCreate", async (message) => {
 
     //henter ut svaret fra open ai
   const response = await openai.createCompletion({
-    model: "text-davinci-003",
+    model: "gpt-3.5-turbo",
     prompt: `Hey Give me a response to this : ${message.content}`,
     temperature: 0.5,
     max_tokens: 60,
